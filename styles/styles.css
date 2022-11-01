@@ -125,7 +125,7 @@ body {
 .introduction {
   color: var(--light-color);
   margin: auto;
-  margin-top: 15%;
+  margin-top: 10%;
   border: 2px solid var(--accent-color);
   width: 80%;
   }
@@ -137,6 +137,15 @@ body {
 
   .introduction p {
     padding-bottom: 5%;
+  }
+  .introduction p::before {
+    content: '\25BB';
+    padding: 2%;
+  }
+  
+  .introduction p::after {
+  content: '\25C5';
+    padding: 2%;
   }
 
 .span-accent  {
@@ -609,6 +618,10 @@ border-radius: 5%;
     padding: 5% 0;
   } 
 
+  .introduction p::after {
+   display: none;
+    }
+
   .nav-links ul{
     display: flex;
     width: 100%;
@@ -663,7 +676,8 @@ border-radius: 5%;
 
   .text-smallscreen {
     display: block;
-    border-bottom: 2px solid rgb(128, 0, 128);
+    text-shadow: 2px 2px var(--accent-color);
+    margin: 5%;
   }
 
   .music-section {
