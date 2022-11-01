@@ -13,7 +13,7 @@
 
 
 body {
-  background-color: #10151b;
+  background-color: var(--dark-color);
   border-left: 2px solid var(--accent-color);
   border-right: 2px solid var(--accent-color);
   margin: 0;
@@ -47,7 +47,7 @@ body {
 
 
    .header-text-front {
-    padding: 12%;
+    padding: 11%;
     position: relative;
     top: 0;
   }
@@ -318,6 +318,26 @@ footer {
 
 /* Gallery Page */
 
+.gallery-body {
+  position: relative;
+}
+
+.gallery-body:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url(../img/aiartfront.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 
 .row-img img{ 
 cursor: pointer; 
@@ -347,7 +367,8 @@ border-radius: 5%;
 
 .text-btwn-img {
  margin: auto;
- border-bottom: 2px solid var(--accent-color); 
+ border-bottom: 2px solid var(--accent-color);
+ width: 30%; 
 }
 
 .text-btwn-img h3 {
@@ -356,37 +377,12 @@ border-radius: 5%;
    font-family: var(--space-text);
 }
 
-.text-over-img {
-  color: var(--light-color);
-  font-size: calc(var(--indent-base) * 2);
-  font-family: var(--space-text);
-  margin: auto;
-  padding-bottom: var(--indent-base);
-}
-
-.text-over-img-last {
-  color: var(--light-color);
-  font-size: calc(var(--indent-base) * 2);
-  font-family: var(--space-text);
-  margin: auto;
-  padding-bottom: var(--indent-base);
-}
-
-.underline-img {
-  border-bottom:2px solid var(--accent-color);
-  width: 30%;
-  margin: auto;
-}
-
 .text-bottom {
   margin: auto;
   padding: var(--indent-base);
   color: var(--light-color);
 }
 
-.link-contact:hover{
-  text-decoration: underline;
-}
 
 .text-smallscreen {
   color: var(--light-color);
@@ -400,6 +396,28 @@ border-radius: 5%;
   font-size: xx-small;
 }
 /* Music Page */ 
+
+  .music-body {
+    position: relative;
+  }
+
+  .music-body:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url(../img/aimusicbg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+
 
 .music-section {
   margin: auto;
@@ -420,6 +438,27 @@ border-radius: 5%;
 }
 
 /* Cyber Tarot Page */
+
+.tarot-body {
+  position: relative;
+}
+
+.tarot-body:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url(../img/ailintrt.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 
 .tarot-deck{
   padding: 200px 0px;
@@ -668,8 +707,6 @@ border-radius: 5%;
   }
 
   .text-btwn-img,
-  .text-over-img,
-  .text-over-img-last,
   .underline-img {
     display: none;
   }
