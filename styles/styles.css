@@ -1,0 +1,620 @@
+:root {
+  --accent-color: rgb(128, 0, 128);
+  --space-text: 'Orbitron', sans-serif;
+  --indent-base: 16px;
+  --light-color: rgb(245,245,245);
+}
+
+*{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+
+body {
+  background-color: #10151b;
+  border-left: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color);
+  margin: 0;
+  height: 100%;
+  }
+
+  header img{
+    width: 100%;
+  }
+  
+.nav-links{
+  flex: 1;
+  text-align: center;
+  border-bottom: 2px solid var(--accent-color);
+  border-top: 2px solid var(--accent-color);
+  }
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  }
+
+.nav-links ul li a{
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: var(--indent-base);
+  }
+
+.nav-links ul li:hover{
+ text-decoration: underline;
+  }
+
+#home-nav {
+  color: var(--light-color);
+}
+
+.introduction {
+  color: var(--light-color);
+  margin: auto;
+  padding: var(--indent-base);
+  }
+
+  .introduction h2 {
+    font-size: calc(var(--indent-base) * 4);
+    font-family: var(--space-text)
+  }
+
+.span-accent  {
+      color: var(--accent-color);
+      font-size: larger;
+      font-family: var(--space-text);
+  }  
+
+.nanaquote {
+  color: var(--light-color);
+  font-size: var(--indent-base);
+  font-weight: 500;
+  font-style: italic;
+  border: 2px solid var(--accent-color);
+  width: 80%;
+  margin: auto;
+}
+
+.row-img {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+ 
+}
+
+.frontimg{
+  flex: 0 1 32%;
+  position: relative;
+  margin: var(--indent-base);
+}
+
+.frontimg img{
+  width: 100%;
+  display: block;
+  border-radius: 5%;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5%;
+  transition: 0,5s;
+}
+
+.layer:hover {
+  background: rgba(128,9,128,0.7)
+}
+
+.layer h3{
+  width: 100%;
+  font-weight: 600;
+  color: #10151b;
+  font-size: calc(var(--indent-base) * 2);
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+
+
+.about {
+width: 90%;
+margin: auto;
+padding: var(--indent-base);
+color: var(--light-color);
+padding-top: 100px;
+}
+
+p{
+  color: var(--light-color);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: calc(var(--indent-base) + 4);
+  padding: 8px;
+}
+
+.row-info {
+  margin: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-box {
+  flex-basis: 45%;
+  background-color: rgb(50, 50, 50);
+  margin-bottom: 5%;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.inspiration-box p::after {
+  content: "\21E9";
+}
+
+.inspiration-box h4::after {
+  content: '\25C5';
+  padding: 1%;
+}
+
+.inspiration-box h4::before {
+  content: '\25BB';
+  padding: 1%;
+}
+
+.creations-box span::before {
+  content: '\263E';
+  padding: 1%;
+}
+
+.creations-box span::after {
+  content: '\263D';
+  padding: 1%;
+}
+
+.info-box:hover{
+  box-shadow: 0 0 20px 0 var(--accent-color);
+}
+
+.section-nana {
+  flex-basis: 42%;
+  width: 80%;
+  margin: auto;
+  padding: var(--indent-base);
+  position: relative;
+  display: flex;
+  border: 2px solid var(--accent-color);
+  align-items: center;
+}
+
+
+.section-nana img{
+  width: 100%;
+  border-radius: 5%;
+}
+
+.section-nana h3{
+  color: var(--light-color);
+  font-size: calc(var(--indent-base) * 2 );
+  margin: auto;
+  padding-top: calc(var(--indent-base) * 2);
+}
+
+.section-nana p{
+  margin: auto;
+}
+
+footer {
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+ .footer img {
+  width: 100%;
+ }
+
+/* Gallery Page */
+
+
+.row-img img{ 
+cursor: pointer; 
+transition: 0.5s; 
+}
+.row-img img:hover {
+  transform: scale(1.1); 
+}
+
+.row-img-big{
+flex-direction: column;
+align-items: center;
+}
+
+.frontimg-big{
+  width: 40%;
+  flex-direction: column;
+  position: relative;
+}
+
+.frontimg-big img {
+width: 100%;
+display: block;
+border-radius: 5%;
+}
+
+
+.text-btwn-img {
+ margin: auto;
+ border-bottom: 2px solid var(--accent-color); 
+}
+
+.text-btwn-img h3 {
+   color: var(--light-color);
+   font-size: calc(var(--indent-base) * 2);
+   font-family: var(--space-text);
+}
+
+.text-over-img {
+  color: var(--light-color);
+  font-size: calc(var(--indent-base) * 2);
+  font-family: var(--space-text);
+  margin: auto;
+  padding-bottom: var(--indent-base);
+}
+
+.text-over-img-last {
+  color: var(--light-color);
+  font-size: calc(var(--indent-base) * 2);
+  font-family: var(--space-text);
+  margin: auto;
+  padding-bottom: var(--indent-base);
+}
+
+.underline-img {
+  border-bottom:2px solid var(--accent-color);
+  width: 30%;
+  margin: auto;
+}
+
+.text-bottom {
+  margin: auto;
+  padding: var(--indent-base);
+  color: var(--light-color);
+}
+
+.link-contact:hover{
+  text-decoration: underline;
+}
+
+.text-smallscreen {
+  color: var(--light-color);
+  font-size: var(--indent-base);
+  font-family: var(--space-text);
+  margin: auto;
+  display: none;
+}
+
+.copyright {
+  font-size: xx-small;
+}
+/* Music Page */ 
+
+.music-section {
+  margin: auto;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.music-section h3 {
+  color: var(--light-color);
+  font-size: calc(var(--indent-base) * 2);
+  font-family: var(--space-text);
+  border-bottom: 2px groove var(--accent-color) ;
+  padding: 4px;
+}
+
+/* Cyber Tarot Page */
+
+.tarot-deck{
+  padding: 200px 0px;
+  width: 100%;
+}
+.tarot-deck h3{
+  font-family: var(--space-text);
+  color: var(--light-color);
+}
+
+.tarot-row {
+ display: inline;
+ width: 100%;
+ justify-content: center;
+ margin: auto;
+}
+
+.tarot img {
+  display: inline;
+  width: 190px;
+  height: 200px;
+  cursor: pointer; 
+  transition: 0.5s;
+  border-radius: 5%;
+}
+
+.tarot img:hover {
+    transform: scale(1.1); 
+     
+  }
+  
+.tarot-meaning-section {
+  display: flex;
+  width: 80%;
+  margin: 100px 60px;
+  padding: 5%;
+  border: 2px solid var(--accent-color);
+}
+
+.tarot-meaning-section img {
+  width: 450px;
+  border-radius: 5%;
+}
+
+.tarot-meaning-section h3 {
+  color: var(--light-color);
+  font-size: calc(var(--indent-base) * 2);
+  font-family: var(--space-text);
+}
+
+.tarot-meaning-section p{
+ margin: auto;
+ width: 80%;
+}
+
+
+
+/* Contact */
+
+
+.blank-links {
+  color: var(--light-color);
+  text-decoration: none;
+}
+.blank-links {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 5%;
+  justify-content: space-between;
+  color: var(--light-color);
+}
+
+.contact-block {
+  display: block;
+  border: 2px solid var(--accent-color);
+  width: 40%;
+  padding: 24px;
+  border-radius: 10%;
+  transition: 0.5s;
+}
+
+.contact-block:hover {
+  box-shadow: 0 0 20px 0 var(--accent-color);
+}
+
+.info-contact {
+  padding: var(--indent-base);
+}
+
+.info-contact h4 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.info-contact p {
+ padding: 0;
+ margin: 0;
+
+}
+
+.form-section {
+  margin: auto;
+  padding: 5%; 
+}
+
+.form-section p {
+  margin: 0;
+  padding: 0;
+}
+
+.send-message {
+  background-color: #10151b;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding: 2%;
+  transition: 0.5s;
+}
+
+.send-message a{
+  text-decoration: none;
+  color: var(--light-color);
+  font-family: var(--space-text);
+}
+
+.send-message:hover {
+  background-color: var(--light-color);
+}
+
+.phone  h4::after {
+  content: '\260E';
+  padding: 1%;
+}
+
+.mail  h4::after {
+  content: '\2709';
+  padding: 1%;
+}
+
+
+/* Thank you page */
+
+.thank-you {
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.creative-space {
+  font-family: var(--space-text);
+}
+
+.thank-you p {
+  padding: 0;
+  margin: 0;
+}
+
+.back-to-homepage {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 768px){
+  .introduction h2 {
+    font-size: calc(var(--indent-base) * 1.5);
+  }  
+
+ .introduction {
+    padding: 5% 0;
+  } 
+
+  .nav-links ul{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 2%;
+  }
+
+  .row-img {
+    flex-direction: column;
+    padding-top: 20%;
+  } 
+
+  .frontimg-big{
+    width: 100%;
+  }
+
+  .layer h3 {
+     opacity: 1;
+     color: var(--light-color);
+     font-size: calc(var(--indent-base) * 1.5);
+     font-family: var(--space-text);
+  }
+
+  .row-info {
+  flex-direction: column;
+  }
+
+  .section-nana{
+    flex-direction: column;
+  }
+
+  .section-nana img {
+    border-radius: 50%;
+  }
+
+  .text-btwn-img,
+  .text-over-img,
+  .text-over-img-last,
+  .underline-img {
+    display: none;
+  }
+
+  .text-smallscreen {
+    display: block;
+    border-bottom: 2px solid rgb(128, 0, 128);
+  }
+
+  .music-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  audio {
+    width: 220px;
+  }
+
+  .music-text h3{
+    font-size: var(--indent-base);
+    width: 80%;
+  }
+
+  .text-bottom h3 {
+    font-size: var(--indent-base);
+  }
+
+
+  .tarot-deck {
+    flex-wrap: wrap;
+  }
+
+  .tarot-deck img {
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .tarot-meaning-section {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+  }
+
+  .tarot-meaning-section img {
+    height: 220px;
+    width: 220px;
+    border-radius: 10%;
+  }
+
+  .form {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .contact-block,
+  .form-section {
+    width: 70%;
+    margin: 5%;
+  }
+
+  .thank-you-body {
+  height: 100vh;
+  }
+
+}
