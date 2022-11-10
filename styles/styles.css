@@ -450,6 +450,7 @@ footer h2 {
   background-position: 50% 0;
   background-attachment: fixed;
   background-size: cover;
+  z-index: -1;
 }
 
 .tarot-deck {
@@ -480,8 +481,8 @@ footer h2 {
 
 .tarot img:hover {
   transform: scale(1.1);
-
 }
+
 
 .tarot-meaning-section {
   display: flex;
@@ -527,6 +528,10 @@ footer h2 {
   color: var(--light-color);
 }
 
+.form .comment {
+ padding: 5%;
+}
+
 .contact-block {
   display: block;
   border: 2px solid var(--accent-color);
@@ -534,6 +539,10 @@ footer h2 {
   padding: 24px;
   border-radius: 10%;
   transition: 0.5s;
+}
+
+.form-headline {
+  padding-bottom: 15%;
 }
 
 .contact-block:hover {
@@ -553,16 +562,6 @@ footer h2 {
   padding: 0;
   margin: 0;
 
-}
-
-.form-section {
-  margin: auto;
-  padding: 5%;
-}
-
-.form-section p {
-  margin: 0;
-  padding: 0;
 }
 
 .send-message {
@@ -758,6 +757,10 @@ footer h2 {
   .form-section {
     width: 70%;
     margin: 5%;
+  }
+
+  .form-headline {
+    padding-bottom: 5%;
   }
 
   .thank-you-body {

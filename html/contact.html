@@ -35,55 +35,37 @@
   </header>
   <section class="form">
     <div class="contact-block">
-      <h2>Get in touch</h2>
-      <form action="https://formsubmit.co/Therese@Lunagrace.tech" method="post" class="form-section">
-        <div class="form-section">
-          <label for="name">Name: </label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-section">
-          <p>What are you?</p>
-          <lable for="radio">Human</lable>
-          <input type="radio" id="radio" name="radio" value="Human">
-          <lable for="radio">Other</lable>
-          <input type="radio" id="radio" name="radio" value="Other">
-        </div>
-        <div class="form-section">
-          <label for="email">E-mail: </label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-section">
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject">
-        </div>
-        <div class="form-section message">
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" placeholder="Bip Bop Bip..." required></textarea>
-        </div>
-        <input type="hidden" name="next_" value="https://lunagrace.tech/contact-thankyou.html">
-        <button type="submit" class="send-message">Send Message</button>
+      <h2 class="form-headline">Get in touch</h2>
+      <form action="mailto:Therese@lunagrace.tech" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name" required><br>
+        E-mail:<br>
+        <input type="text" name="mail" required><br>
+        Comment:<br>
+        <input type="text" name="comment" size="20" placeholder="Bip Bop Bip..." class="comment"><br><br>
+        <input type="submit" value="Send" class="send-message">
+        <input type="reset" value="Reset" class="send-message">
       </form>
     </div>
-
-    <div class="contact-block">
-      <h2>Contact Us</h2>
-      <div class="info-contact phone">
-        <h4>Phone</h4>
-        <p>3.14159265359</p>
+      <div class="contact-block">
+        <h2>Contact Us</h2>
+        <div class="info-contact phone">
+          <h4>Phone</h4>
+          <p>3.14159265359</p>
+        </div>
+        <div class="info-contact mail">
+          <h4>Email</h4>
+          <p>Therese@Lunagrace.tech</p>
+        </div>
+        <div class="info-contact">
+          <h4>Address</h4>
+          <a target="_blank" href="https://www.google.com/moon/" class="blank-links">Luna Lane 3.14</a>
+        </div>
+        <div class="info-contact">
+          <h4>Website</h4>
+          <p>You know where to find us</p>
+        </div>
       </div>
-      <div class="info-contact mail">
-        <h4>Email</h4>
-        <p>Therese@Lunagrace.tech</p>
-      </div>
-      <div class="info-contact">
-        <h4>Address</h4>
-        <a target="_blank" href="https://www.google.com/moon/" class="blank-links">Luna Lane 3.14</a>
-      </div>
-      <div class="info-contact">
-        <h4>Website</h4>
-        <p>You know where to find us</p>
-      </div>
-    </div>
   </section>
   <footer>
     <h2>/ Creative Space </h2>
