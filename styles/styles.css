@@ -315,6 +315,10 @@ footer h2 {
 
 /* Gallery Page */
 
+.wrapper-text {
+  position: relative;
+}
+
 .gallery-body {
   position: relative;
 }
@@ -513,12 +517,10 @@ footer h2 {
 
 .blank-links {
   color: var(--light-color);
-  text-decoration: none;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.blank-links {
-  text-decoration: underline;
-}
 
 .form {
   display: flex;
